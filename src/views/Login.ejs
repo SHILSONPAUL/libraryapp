@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="/css/extra.css">
+</head>
+<body>
+    
+        <nav class="navbar navbar-expand-sm navbar-custom">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="Index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Signup.html">Signup</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Login</a>
+                  </li>
+                </ul>
+              </nav>
+      <div class="jumbotron jumbotron-fluid jumbo1" style="background-color: rgb(7, 7, 87);">
+        <div class="container-fluid">
+          <div class="row">
+                <div class="heading col-sm-7 text-white">   
+                        <h1 class="display-1"><b>Library</b></h1>
+                      </div>   
+                <div class="jumbotron jumbo2 col-sm-4" style="background-color: rgb(71, 71, 182);">
+                 </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="main col-sm-11">
+            <div class="login">
+            <h1 class="display-5 ">Log In</h1><br><br>
+        
+
+            <form action="#" method="post" onsubmit="return validateLogin(this)">
+                    <div class="form-group row">
+                      <label for="Email" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" name="Email" placeholder="example@gmail.com"><br><br>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="loginpassword" class="col-sm-2 col-form-label">Password</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" name="loginpassword" placeholder="Password">
+                      </div>
+                    </div>
+                   
+                    <div class="form-group row">
+                      <div class="col-sm-2"></div>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1" >
+                          <label class="form-check-label" for="gridCheck1">
+                           Remember Me 
+                          </label>
+                        </div>
+                      </div>
+                    </div><br>
+                    <div class="form-group row">
+                    <div class="col-sm-2"></div>
+                      <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                      </div>
+                    </div>
+                  </form>
+                  
+    </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="footer">
+          Copyright @2019. All rights reserved.
+      </div>      
+<script src="Login.js"></script>
+</body>
+</html>
