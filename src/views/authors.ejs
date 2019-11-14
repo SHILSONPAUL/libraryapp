@@ -14,76 +14,73 @@
 
 </head>
 <body>
-       
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=>>, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Library</title>
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/css/extra.css">
     
-<nav class="navbar navbar-expand-sm navbar-custom">  
-    <ul class="navbar-nav">
     
-            <%for(var i=0;i<nav.length;i++){%>
-                <li>
-                    <a href="<%=nav[i].link%>"> <%=nav[i].title%>&nbsp;&nbsp;</a> 
-                </li>      
-                <%}%>
-       
-        <!-- <li class="nav-item active"><a class="nav-link" href="Index.html"> Home </a></li>
-        <li class="nav-item"><a class="nav-link" href="Signup.html"> Signup </a></li>
-        <li class="nav-item"><a class="nav-link" href="Login.html"> Login </a></li> -->
-    </ul>
-</nav>    
-
-<div class="jumbotron jumbotron-fluid jumbo1 " style="background-color: rgb(7, 7, 87);">
-    <div class="container-fluid"> 
-    <div class="row">
-        <div class="heading col-sm-7 text-white">   
-            <h1 class="display-1"> <b><%=title%></b></h1>
-        </div>   
-        <div class="jumbotron jumbo2 col-sm-4" style="background-color: rgb(71, 71, 182);">
-        </div>
-    </div>
-    </div>   
-</div>  
-
-<div class="container-fluid">
+    </head>
+    <body>
+           
+        
+    <nav class="navbar navbar-expand-sm navbar-custom">  
+        <ul class="navbar-nav">
+        
+                <%for(var i=0;i<nav.length;i++){%>
+                    <li>
+                        <a href="<%=nav[i].link%>"> <%=nav[i].title%>&nbsp;&nbsp;</a> 
+                    </li>      
+                    <%}%>
+           
+        
+        </ul>
+    </nav>    
+    
+    <div class="jumbotron jumbotron-fluid jumbo1 books style="background-color: rgb(7, 7, 87);">
+        <div class="container-fluid"> 
         <div class="row">
-          <div class="main col-sm-11">
-            <div class="row sub border-bottom">
-              <div class="sub1 col-sm-2">
-                <img src="/images/logo.png"  class="rounded-circle" alt="logo">   
-              </div>   
-              <div class="sub2 col-sm-9">
-                <h1>Repurpose Content to Reach a Wider Audience</h1>
-                <h3>2 hours ago</h3>
-                <h3>logout</h3>
-              </div>
-            
+            <div class="heading col-sm-7 text-white">   
+                <h1 class="display-1"> <b><%=title%></b></h1>
+            </div>   
+            <div class="jumbotron jumbo2 col-sm-4" style="background-color: rgb(71, 71, 182);">
             </div>
-
-          
-            <div class="row sub border-bottom">
-                  <div class="sub1 col-sm-2">
-                    <img src="/images/logo.png"  class="rounded-circle" alt="logo">   
-                  </div>   
-                  <div class="sub2 col-sm-9">
-                  <h1>14 Useful Sites for a Designers</h1>
-                  <h3>2 hours ago</h3>
-                  <h3>logout</h3>
-                  </div>
-            </div>
-          </div>
         </div>
-        <ul>
-               
-                
-            </ul>  
-      </div>   
+        </div>   
+    </div>  
+    
+    <div class="container-fluid" style="height: 600px">
+            <div class="row">
+              <div class="main col-sm-11">
+              
+    
+              <%for(var i=0;i<authors.length;i++){%>
+                 
+                <div class="row sub border-bottom">
+                      <div class="sub1 col-sm-2">
+                        <img src ="/images/<%=authors[i].image%>" class="rounded-circle">   
+                      </div>   
+                      <div class="sub2 col-sm-9">
 
+                      <h3><%=authors[i].author%></h3>
+                      <a href="/authors/<%=i%>"> Read more...</a>
+                      </div>
+                </div>
+                <%}%>
     
-    
-    <div class="footer">
-        Copyright @2019. All rights reserved.
-    </div>
-    
-    
-
-</body>
-</html>
+              </div>
+            </div>
+          
+          </div>         
+        <div class="footer">
+            Copyright @2019. All rights reserved.
+        </div>     
+    </body>
+    </html>
