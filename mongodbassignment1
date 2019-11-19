@@ -1,0 +1,1 @@
+db.calicutdb.insertMany([{"fname":"Athul","lname":"George","pnum":9895664435,"city":"Calicut","pin":673046,"email":"athulg@gmail.com"}])
